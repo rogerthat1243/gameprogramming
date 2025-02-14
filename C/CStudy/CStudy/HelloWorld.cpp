@@ -6,10 +6,10 @@
 주제			: Hello World 출력하기
 */
 
-#include <stdio.h>
-
-int main()
-{
-	printf("Hello World!");
-	return 0;
-}
+#include <stdio.h> // h = Header-함수를 쓰기 위한 레퍼런스. include/stdio/h 헤더를 입출력하는 표준 명령을 포함하는 명령어?
+				   // 코드 보기 쉽도록 비워두는 공백?
+int main()		   // int는 정수만 쓰겠다! (int가 정수라는 의미니까) main = 함수를 실행하겠다! 의 의미? 소괄호 ()는 main이라는 명령어를 실행하겠다의 의미? 중괄호 {}는 이러한 함수를 쓰고 종료하겠다의 의미?
+{				   // 코드 보기 쉽도록 비워두는 공백2?
+	printf("Hello World!"); // printf print는 출력합니다. f는 특정 서식? 글? 로 하겠다라는 의미? 어떠어떠한 서식?글꼴로 출력하겠다?
+	return 0;	   // 함수 끝내기
+}				   // 코드 보기 쉽도록 비워두는 공백3?
