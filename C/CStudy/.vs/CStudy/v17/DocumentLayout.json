@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92DF421F-1FC6-44B3-990E-D96D32BF2C3B}|CStudy\\CStudy.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\CStudy\\HelloWorld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{92DF421F-1FC6-44B3-990E-D96D32BF2C3B}|CStudy\\CStudy.vcxproj|solutionrelative:CStudy\\HelloWorld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HelloWorld.cpp",
+              "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\CStudy\\HelloWorld.cpp",
+              "RelativeDocumentMoniker": "CStudy\\HelloWorld.cpp",
+              "ToolTip": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\CStudy\\HelloWorld.cpp",
+              "RelativeToolTip": "CStudy\\HelloWorld.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-14T07:24:59.139Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
