@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37EAAC26-F543-4A76-8480-55C451549DB6}|Ch11\\Ch11.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch11\\Variable.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37EAAC26-F543-4A76-8480-55C451549DB6}|Ch11\\Ch11.vcxproj|solutionrelative:Ch11\\Variable.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92DF421F-1FC6-44B3-990E-D96D32BF2C3B}|CStudy\\CStudy.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\CStudy\\HelloWorld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{92DF421F-1FC6-44B3-990E-D96D32BF2C3B}|CStudy\\CStudy.vcxproj|solutionrelative:CStudy\\HelloWorld.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{124F43AD-02DC-4F11-B6CE-99A738BA1EB3}|Ch2\\Ch2.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch2\\Main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{124F43AD-02DC-4F11-B6CE-99A738BA1EB3}|Ch2\\Ch2.vcxproj|solutionrelative:Ch2\\Main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Variable.c",
-              "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch11\\Variable.c",
-              "RelativeDocumentMoniker": "Ch11\\Variable.c",
-              "ToolTip": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch11\\Variable.c",
-              "RelativeToolTip": "Ch11\\Variable.c",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAewBkAAAAvAAAAAAAAAA==",
+              "Title": "Main.c",
+              "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch2\\Main.c",
+              "RelativeDocumentMoniker": "Ch2\\Main.c",
+              "ToolTip": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch2\\Main.c",
+              "RelativeToolTip": "Ch2\\Main.c",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-02-17T07:29:20.021Z",
+              "WhenOpened": "2025-02-18T07:07:40.243Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HelloWorld.cpp",
-              "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\CStudy\\HelloWorld.cpp",
-              "RelativeDocumentMoniker": "CStudy\\HelloWorld.cpp",
-              "ToolTip": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\CStudy\\HelloWorld.cpp",
-              "RelativeToolTip": "CStudy\\HelloWorld.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-14T07:24:59.139Z"
             }
           ]
         }
