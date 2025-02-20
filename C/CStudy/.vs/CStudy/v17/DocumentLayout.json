@@ -3,15 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{56A9FDA2-5479-4087-B9E4-4F614D92A759}|Ch4\\Ch4.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch4\\Data.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{56A9FDA2-5479-4087-B9E4-4F614D92A759}|Ch4\\Ch4.vcxproj|solutionrelative:Ch4\\Data.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5598CD03-E963-448B-A4CF-B12830728F75}|Operator\\Operator.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Operator\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5598CD03-E963-448B-A4CF-B12830728F75}|Operator\\Operator.vcxproj|solutionrelative:Operator\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{124F43AD-02DC-4F11-B6CE-99A738BA1EB3}|Ch2\\Ch2.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch2\\Main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{124F43AD-02DC-4F11-B6CE-99A738BA1EB3}|Ch2\\Ch2.vcxproj|solutionrelative:Ch2\\Main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5598CD03-E963-448B-A4CF-B12830728F75}|Operator\\Operator.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UCRT\\STDIO.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,37 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "stdio.h",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
-              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-19T08:12:43.555Z",
+              "DocumentIndex": 0,
+              "Title": "Data.c",
+              "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch4\\Data.c",
+              "RelativeDocumentMoniker": "Ch4\\Data.c",
+              "ToolTip": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch4\\Data.c",
+              "RelativeToolTip": "Ch4\\Data.c",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAuwGYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-02-20T07:24:27.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Operator\\main.c",
               "RelativeDocumentMoniker": "Operator\\main.c",
               "ToolTip": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Operator\\main.c",
               "RelativeToolTip": "Operator\\main.c",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAuwHgAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAuwIkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-02-19T07:04:59.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Main.c",
               "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch2\\Main.c",
               "RelativeDocumentMoniker": "Ch2\\Main.c",
@@ -59,8 +60,7 @@
               "RelativeToolTip": "Ch2\\Main.c",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAC4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-02-18T07:07:40.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T07:07:40.243Z"
             }
           ]
         }

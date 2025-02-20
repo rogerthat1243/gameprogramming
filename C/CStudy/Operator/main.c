@@ -114,11 +114,15 @@ int main()
 
 	printf("스토리 1 : 무기 강화 수치\n");
 
-	int num5 = 1;
-	int num6 = 2;
+	int defaultPower = 5;
+	int weaponLv = 1;
+	int upPower = 2;
 
-	printf("기본 강화 수치 : %d, 공격력\n", num5);
-	printf("추가 강화 수치 : %d\n", num6);
+	int allPower = defaultPower + weaponLv * upPower;
+
+	printf("무기 레벨 : %d, 무기 공격력 : %d\n", ++weaponLv, defaultPower);
+	allPower = defaultPower + weaponLv * upPower;
+	printf("무기 레벨 : %d, 무기 공격력 : %d\n\n", weaponLv, defaultPower);
 
 
 	//게임 스토리 2
@@ -128,8 +132,25 @@ int main()
 	// Stack 최대 갯수 : 변수
 	// A 아이템을 n 개 획득, B 아이템 m 개 획득
 	// 현재 인벤토리의 갯수가 가득 찼는지 안 찼는지 표현하는 결과를 표현
-
 	// 3항 연사자 사용
+
+	int maxInventorySlot = 10;
+	int AStackCount = 200;
+	int BStackCount = 200;
+	int ADrop = 555;
+	int BDrop = 777;
+
+	printf("1시간 동안 사냥을 해서 아이템을 획득했다.\n");
+	printf("A아이템 : %d, B아이템 : %d 획득했다.\n", ADrop, BDrop);
+
+	// 나머지
+
+	int AInventoryCount = (ADrop % AStackCount) == 0 ? (AStackCount / ADrop) : (AStackCount / ADrop) + 1;
+	int BInventoryCount = (BDrop % BStackCount) == 0 ? (BStackCount / BDrop) : (BStackCount / BDrop) + 1;
+	
+
+	printf("A의 갯수 : %d, B의 갯수 : %d\n", AInventoryCount, BInventoryCount);
+	printf("결과 : %s\n", maxInventorySlot <= (AInventoryCount + BInventoryCount) ? "가득참" : "가득안참");
 
 
 }
