@@ -1,0 +1,5 @@
+﻿  main.c
+C:\Users\khm\Documents\GitHub\gameprogramming\C\CStudy\Ch 6\main.c(91,2): warning C4013: 'srand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\khm\Documents\GitHub\gameprogramming\C\CStudy\Ch 6\main.c(91,8): warning C4013: 'time'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\khm\Documents\GitHub\gameprogramming\C\CStudy\Ch 6\main.c(92,21): warning C4013: 'rand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  Ch 6.vcxproj -> C:\Users\khm\Documents\GitHub\gameprogramming\C\CStudy\x64\Debug\Ch 6.exe
