@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E48A627A-7AFA-4E52-87B2-0D99035E308F}|Ch 8\\Ch 8.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 8\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E48A627A-7AFA-4E52-87B2-0D99035E308F}|Ch 8\\Ch 8.vcxproj|solutionrelative:Ch 8\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{672A398F-7025-4EB8-9DA3-715A45C4776B}|Ch 9\\Ch 9.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 9\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{672A398F-7025-4EB8-9DA3-715A45C4776B}|Ch 9\\Ch 9.vcxproj|solutionrelative:Ch 9\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E48A627A-7AFA-4E52-87B2-0D99035E308F}|Ch 8\\Ch 8.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 8\\menu.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E48A627A-7AFA-4E52-87B2-0D99035E308F}|Ch 8\\Ch 8.vcxproj|solutionrelative:Ch 8\\menu.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E48A627A-7AFA-4E52-87B2-0D99035E308F}|Ch 8\\Ch 8.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 8\\menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E48A627A-7AFA-4E52-87B2-0D99035E308F}|Ch 8\\Ch 8.vcxproj|solutionrelative:Ch 8\\menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DA15C8D9-367D-4F24-8818-32B976241022}|Ch 10\\Ch 10.vcxproj|C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 10\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DA15C8D9-367D-4F24-8818-32B976241022}|Ch 10\\Ch 10.vcxproj|solutionrelative:Ch 10\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "menu.c",
-              "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 8\\menu.c",
-              "RelativeDocumentMoniker": "Ch 8\\menu.c",
-              "ToolTip": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 8\\menu.c",
-              "RelativeToolTip": "Ch 8\\menu.c",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAewC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-02-26T08:16:11.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "menu.h",
-              "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 8\\menu.h",
-              "RelativeDocumentMoniker": "Ch 8\\menu.h",
-              "ToolTip": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 8\\menu.h",
-              "RelativeToolTip": "Ch 8\\menu.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-26T08:09:14.559Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 8\\main.c",
-              "RelativeDocumentMoniker": "Ch 8\\main.c",
-              "ToolTip": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 8\\main.c",
-              "RelativeToolTip": "Ch 8\\main.c",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 9\\main.c",
+              "RelativeDocumentMoniker": "Ch 9\\main.c",
+              "ToolTip": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 9\\main.c",
+              "RelativeToolTip": "Ch 9\\main.c",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-02-26T07:04:03.387Z",
+              "WhenOpened": "2025-03-01T15:49:02.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 10\\main.c",
+              "RelativeDocumentMoniker": "Ch 10\\main.c",
+              "ToolTip": "C:\\Users\\khm\\Documents\\GitHub\\gameprogramming\\C\\CStudy\\Ch 10\\main.c",
+              "RelativeToolTip": "Ch 10\\main.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-02-28T07:02:51.637Z",
               "EditorCaption": ""
             }
           ]
