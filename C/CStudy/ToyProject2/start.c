@@ -3,6 +3,7 @@
 #include <windows.h>
 #include <stdbool.h>
 #include "border.h"
+#include "border2.h"
 
 void setCursorPos(int x, int y)
 {
@@ -18,9 +19,15 @@ void setCursorVisible(bool enable)
 	GetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursorInfo);
 }
 
-void gotoxy(int x, int y) {
+void gotoxy(int x, int y) // 빈 공간 지우기
+{
 	COORD pos = { x, y };
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+}
+
+void setColor(int color)
+{
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
 
 void village()
@@ -34,12 +41,12 @@ void village()
 	int playerC = 17;
 	int playerD = 12;
 
-	int money = 1000;
+	int money = 500;
 	int level = 1;
 	int power = 10;
 
-	int enemyHP = 100;
-	int enemyATK = 60;
+	int enemyHP = 125;
+	int enemyATK = 10;
 	int enemyLV = 1;
 	int downLV = 1;
 
@@ -61,13 +68,15 @@ void village()
 	setCursorPos(65, 20);
 	printf("적 체력 : %d", enemyHP);
 	setCursorPos(65, 23);
-	printf("적 공격 : %d", enemyATK);
+	printf("적 공격 임박 : %d", enemyATK);
 
 	setCursorPos(65, 12);
 	printf("[텍스트 출력]");
 
+
 	while (1)
 	{
+
 		setCursorPos(playerX, playerY);
 		printf("1.  [강화하기]");
 		setCursorPos(playerA, playerB);
@@ -75,8 +84,15 @@ void village()
 		setCursorPos(playerC, playerD);
 		printf("3.  [그만하기]");
 
+		enemyATK--;
 		printf("\n\n\n\n\n선택: ");
 		scanf_s("%d", &start2);
+		gotoxy(65, 23);
+		setCursorPos(65, 23);
+		printf("적 공격 임박 : %d    ", enemyATK);
+
+		// 숫자 하나 타이핑 안 하고 여러 개 타이핑하면 잔상 남던데 어캐 지우지
+
 
 		if (enemyLV >= 6)
 		{
@@ -84,7 +100,7 @@ void village()
 
 			printf("■■■■■■■■■■■■■■■■■■■■■■■■■\n");
 			printf("■                                              ■\n");
-			printf("■                승리했습니다!                  ■\n");
+			printf("■                승리했습니다!                 ■\n");
 			printf("■              게임을 종료합니다.              ■\n");
 			printf("■                                              ■\n");
 			printf("■■■■■■■■■■■■■■■■■■■■■■■■■\n");
@@ -93,16 +109,40 @@ void village()
 			exit(0);
 		}
 
+		if (enemyATK <= 0)
+		{
+			system("cls");
+
+			printf("■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+			printf("■                                              ■\n");
+			printf("■           시간 초과로 패배했습니다!          ■\n");
+			printf("■              게임을 종료합니다.              ■\n");
+			printf("■                                              ■\n");
+			printf("■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+
+			Sleep(1000);
+			exit(0);
+		}
+
 		if (start2 == 1)
 		{
 			if (money >= 100)
 			{
 				money -= 100;
-				level += 1;
+				level++;
 				power += 10;
 				gotoxy(65, 12);
 				setCursorPos(65, 12);
-				printf("강화 성공! 무기 레벨과 공격력이 상승합니다!");
+				printf("강화 성공!");
+				setColor(6);
+				printf(" 무기 레벨");
+				setColor(7);
+				printf("과");
+				setColor(12);
+				printf(" 공격력");
+				setColor(7);
+				printf(" 이 상승합니다!");
+
 				gotoxy(65, 1);
 				setCursorPos(65, 1);
 				printf("강화 단계 : %d", level);
@@ -116,17 +156,22 @@ void village()
 			else
 			{
 				setCursorPos(65, 12);
-				printf("소지금이 부족하여 강화할 수 없습니다.             ");
+				setColor(14);
+				printf("소지금");
+				setColor(7);
+				printf("이 부족하여 강화할 수 없습니다.             ");
 			}
 		}
 
 		else if (start2 == 2)
 		{
-			if (enemyATK >= 1)
-			{
 				gotoxy(65, 12);
 				setCursorPos(65, 12);
-				printf("적을 공격하여 %d만큼의 피해를 입혔습니다.   ", power);
+				printf("적을 공격하여");
+				setColor(4);
+				printf(" %d만큼", power);
+				setColor(7);
+				printf("의 피해를 입혔습니다.    ");
 				enemyHP -= power;
 				gotoxy(65, 20);
 				setCursorPos(65, 20);
@@ -136,29 +181,31 @@ void village()
 				{
 					gotoxy(65, 12);
 					setCursorPos(65, 12);
-					printf("적을 제거했습니다. 적이 더 강해집니다.        ");
-					money += 500;
+					printf("적을");
+					setColor(4);
+					printf(" 제거");
+					setColor(7);
+					printf("했습니다.");
+					setColor(12);
+					printf(" 적이 더 강해집니다.        ");
+					setColor(7);
+					money += 200;
 					gotoxy(65, 7);
 					setCursorPos(65, 7);
 					printf("소지금 : %d    ", money);
 
-					enemyHP = 200;
+					enemyLV++;
+					enemyHP = 100 + (enemyLV * 50);
+					enemyATK += 6;
+
 					gotoxy(65, 20);
 					setCursorPos(65, 20);
 					printf("적 체력 : %d    ", enemyHP);
-
-					enemyLV = 2;
-					gotoxy(65, 17);
-					setCursorPos(65, 17);
-					printf("적 단계 : %d    ", enemyLV);
-
-					enemyATK = 2;
 					gotoxy(65, 17);
 					setCursorPos(65, 17);
 					printf("적 단계 : %d    ", enemyLV);
 					
 				}
-			}
 
 		}
 		else if (start2 == 3)
@@ -171,9 +218,10 @@ void village()
 			printf("■                                              ■\n");
 			printf("■■■■■■■■■■■■■■■■■■■■■■■■■\n");
 
-			Sleep(2000);
+			Sleep(1000);
 			exit(0);
 		}
+
 	}
 
 }
@@ -214,7 +262,7 @@ int main()
 			printf("■              게임이 시작됩니다!              ■\n");
 			printf("■                                              ■\n");
 			printf("■■■■■■■■■■■■■■■■■■■■■■■■■\n");
-			//Sleep(2000);
+			Sleep(1000);
 
 			village();
 			exit(0);
@@ -231,10 +279,19 @@ int main()
 			printf("■                                              ■\n");
 			printf("■■■■■■■■■■■■■■■■■■■■■■■■■\n");
 
-			Sleep(2000);
+			Sleep(1000);
 			exit(0);
 		}
 	}
 
 	return 0;
 }
+
+
+/*
+Sleep(1000);
+enemyATK--;
+gotoxy(65, 23);
+setCursorPos(65, 23);
+printf("적 공격 임박 : %d    ", enemyATK);
+*/

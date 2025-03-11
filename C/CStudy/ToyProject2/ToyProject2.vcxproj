@@ -128,11 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="border.c" />
+    <ClCompile Include="border2.c" />
     <ClCompile Include="start.c" />
     <ClCompile Include="village.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="border.h" />
+    <ClInclude Include="border2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
