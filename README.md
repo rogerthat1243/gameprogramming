@@ -10,7 +10,13 @@
 - 프로젝트 **main 씬** 구성 완료
 
 <img src="/image/01-2. End.png" width = "500" height = "300" title = "제목"></img>
-- **게임 종료 씬** 구성 완료
+- 프로젝트 **게임 종료 씬** 구성 완료
+
+<img src="/image/02. Start_Loading.png" width = "500" height = "300" title = "제목"></img>
+- 프로젝트 **게임 로딩 씬** 구성 완료
+
+<img src="/image/03-1. main.png" width = "500" height = "300" title = "제목"></img>
+- 프로젝트 **게임 village 씬** 구성 완료
 
 
 - 프로젝트 **village 씬** 구성 완료
@@ -29,3 +35,5 @@
 
 > 인용문
 > > 중첩 인용문
+
+---
