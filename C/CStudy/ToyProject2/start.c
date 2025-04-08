@@ -5,6 +5,13 @@
 #include "border.h"
 #include "border2.h"
 
+typedef struct Enemy {
+	int hp;
+	int atk;
+	int level;
+	int attackTimer;
+}Enemy;
+
 void setCursorPos(int x, int y)
 {
 	COORD pos = { x,y };
@@ -30,7 +37,7 @@ void setColor(int color)
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
 
-void village()
+void village(Enemy* enemy)
 {
 	int start2;
 
@@ -44,11 +51,6 @@ void village()
 	int money = 500;
 	int level = 1;
 	int power = 10;
-
-	int enemyHP = 125;
-	int enemyATK = 10;
-	int enemyLV = 1;
-	int downLV = 1;
 
 	system("cls");
 	ShowBorder();
@@ -64,11 +66,11 @@ void village()
 	printf("소지금 : %d", money);
 
 	setCursorPos(65, 17);
-	printf("적 단계 : %d", enemyLV);
+	printf("적 단계 : %d", enemy->level);
 	setCursorPos(65, 20);
-	printf("적 체력 : %d", enemyHP);
+	printf("적 체력 : %d", enemy->hp);
 	setCursorPos(65, 23);
-	printf("적 공격 임박 : %d", enemyATK);
+	printf("적 공격 임박 : %d", enemy->atk);
 
 	setCursorPos(65, 12);
 	printf("[텍스트 출력]");
@@ -84,17 +86,17 @@ void village()
 		setCursorPos(playerC, playerD);
 		printf("3.  [그만하기]");
 
-		enemyATK--;
+		enemy->atk--;
 		printf("\n\n\n\n\n선택: ");
 		scanf_s("%d", &start2);
 		gotoxy(65, 23);
 		setCursorPos(65, 23);
-		printf("적 공격 임박 : %d    ", enemyATK);
+		printf("적 공격 임박 : %d    ", enemy->atk);
 
-		// 숫자 하나 타이핑 안 하고 여러 개 타이핑하면 잔상 남던데 어캐 지우지
+		
 
 
-		if (enemyLV >= 6)
+		if (enemy->level >= 6)
 		{
 			system("cls");
 
@@ -109,7 +111,7 @@ void village()
 			exit(0);
 		}
 
-		if (enemyATK <= 0)
+		if (enemy->atk <= 0)
 		{
 			system("cls");
 
@@ -172,12 +174,12 @@ void village()
 				printf(" %d만큼", power);
 				setColor(7);
 				printf("의 피해를 입혔습니다.    ");
-				enemyHP -= power;
+				enemy->hp -= power;
 				gotoxy(65, 20);
 				setCursorPos(65, 20);
-				printf("적 체력 : %d    ", enemyHP);
+				printf("적 체력 : %d    ", enemy->hp);
 
-				if (enemyHP <= 0)
+				if (enemy->hp <= 0)
 				{
 					gotoxy(65, 12);
 					setCursorPos(65, 12);
@@ -194,16 +196,16 @@ void village()
 					setCursorPos(65, 7);
 					printf("소지금 : %d    ", money);
 
-					enemyLV++;
-					enemyHP = 100 + (enemyLV * 50);
-					enemyATK += 6;
+					enemy->level++;
+					enemy->hp = 100 + (enemy->level * 50);
+					enemy->atk += 6;
 
 					gotoxy(65, 20);
 					setCursorPos(65, 20);
-					printf("적 체력 : %d    ", enemyHP);
+					printf("적 체력 : %d    ", enemy->hp);
 					gotoxy(65, 17);
 					setCursorPos(65, 17);
-					printf("적 단계 : %d    ", enemyLV);
+					printf("적 단계 : %d    ", enemy->level);
 					
 				}
 
@@ -264,7 +266,36 @@ int main()
 			printf("■■■■■■■■■■■■■■■■■■■■■■■■■\n");
 			Sleep(1000);
 
-			village();
+			int difficulty;
+			system("cls");
+			printf("■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+			printf("■                                              ■\n");
+			printf("■          난이도를 선택하세요 (1~3)           ■\n");
+			printf("■        1. 쉬움 / 2. 보통 / 3. 어려움         ■\n");
+			printf("■                                              ■\n");
+			printf("■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+			printf("\n선택: ");
+			scanf_s("%d", &difficulty);
+
+			Enemy enemy;
+			switch (difficulty) {
+			case 1:
+				enemy = (Enemy){ 100, 5, 1, 10 };
+				break;
+			case 2:
+				enemy = (Enemy){ 125, 10, 1, 9 };
+				break;
+			case 3:
+				enemy = (Enemy){ 200, 15, 1, 8 };
+				break;
+			default:
+				printf("잘못된 입력입니다. 기본 난이도(보통)으로 설정합니다.\n");
+				Sleep(1000);
+				enemy = (Enemy){ 125, 10, 1, 9 };
+				break;
+			}
+			
+			village(&enemy);
 			exit(0);
 
 		}
@@ -288,10 +319,14 @@ int main()
 }
 
 
+// 2차원 배열에 들어있는 모든 좌표를 입력 받은 좌표로 움직이는 함수
+
+// 전투 시작 -- 전투 종료
+// currentHp = maxhp;
+// currentHP = currentHp - 상대 공격력
+// currentHp 0이 될 때의 몬스터가 사망 or 플레이어 사망
+// evade 확률 추가?
+
 /*
-Sleep(1000);
-enemyATK--;
-gotoxy(65, 23);
-setCursorPos(65, 23);
-printf("적 공격 임박 : %d    ", enemyATK);
+* 
 */

@@ -54,8 +54,10 @@ void WeaponUpgrade()
 	printf("현재 무기 레벨 : %d, 현재 무기 공격력 : %d\n", weaponLV, currentAP);
 }
 
-void Fightfield()
-{
-	
-}
+// 2차원 배열에 들어있는 모든 좌표를 입력 받은 좌표로 움직이는 함수
 
+// 전투 시작 -- 전투 종료
+// currentHp = maxhp;
+// currentHP = currentHp - 상대 공격력
+// currentHp 0이 될 때의 몬스터가 사망 or 플레이어 사망
+// evade 확률 추가?
